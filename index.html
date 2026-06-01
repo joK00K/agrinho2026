@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#impacto">Impacto</a>
+        </nav>
+    </header>
+
+    <!-- Seção Hero (Introdução) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte: O Equilíbrio Perfeito</h1>
+            <p>Produzir em alta escala protegendo o meio ambiente é o nosso compromisso com o amanhã.</p>
+            <a href="#pilares" class="btn">Conheça as Tecnologias</a>
+        </div>
+    </section>
+
+    <!-- Seção de Pilares (Interativa) -->
+    <section id="pilares" class="pillars">
+        <h2>Nossos Pilares de Equilíbrio</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-target="all">Todos</button>
+            <button class="filter-btn" data-target="producao">Produção Forte</button>
+            <button class="filter-btn" data-target="sustentavel">Sustentabilidade</button>
+        </div>
+
+        <div class="grid">
+            <div class="card" data-category="producao">
+                <h3>Agricultura de Precisão</h3>
+                <p>Uso de drones e sensores para otimizar insumos e evitar desperdícios no campo.</p>
+            </div>
+            <div class="card" data-category="sustentavel">
+                <h3>Crédito de Carbono</h3>
+                <p>Práticas agrícolas que capturam carbono do ar e geram bônus financeiros.</p>
+            </div>
+            <div class="card" data-category="producao">
+                <h3>Biotecnologia</h3>
+                <p>Sementes mais resistentes a pragas que reduzem a necessidade de defensivos químicos.</p>
+            </div>
+            <div class="card" data-category="sustentavel">
+                <h3>Manejo de Água</h3>
+                <p>Sistemas inteligentes de irrigação gota a gota que economizam até 40% de recursos hídricos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Impacto (Contadores Animados) -->
+    <section id="impacto" class="stats">
+        <h2>Nosso Impacto em Números</h2>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="number" data-count="35">0</div>
+                <div class="label">% Mais Produtividade</div>
+            </div>
+            <div class="stat-item">
+                <div class="number" data-count="50">0</div>
+                <div class="label">% Menos Emissões</div>
+            </div>
+            <div class="stat-item">
+                <div class="number" data-count="100">0</div>
+                <div class="label">M_Hectares Preservados</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Agro Forte. Alimentando o mundo, protegendo o planeta.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

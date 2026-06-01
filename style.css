@@ -1,0 +1,181 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #092909;
+}
+
+/* Cabeçalho */
+header {
+    background: #052709;
+    color: white;
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #52b788;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #52b788;
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background: #52b788;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #40916c;
+}
+
+/* Pilares e Grid */
+.pillars {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.pillars h2 {
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.filter-buttons {
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: #fff;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 8px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #000000;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, opacity 0.3s;
+    border-top: 4px solid #52b788;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estatísticas */
+.stats {
+    background: #1b4332;
+    color: white;
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.stats h2 {
+    margin-bottom: 3rem;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.number {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #52b788;
+}
+
+.label {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background: #112a1e;
+    color: #a3b18a;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
